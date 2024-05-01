@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Favorite Books</title>
+</head>
+<body>
+    <div class="container">
+        <h3>My Book Library</h3>
+        <hr>
+        <div class="library-content">
+            <div class="shelf-container">
+
+            </div>
+            <div class="addBook-container">
+                <p id="click-text">Click here to add new book</p>
+                <div class="addBook">
+                    <form id="myForm" action="" method="post" onsubmit="return false">
+                        <button id="close"><strong>X</strong></button>
+                        <label for="title">Book Title:</label>
+                        <input type="text" id="title" name="title" required>
+                        <label for="author">Author Name:</label>
+                        <input type="text" id="author" name="author" required>
+                        <label for="pages">Number of Pages:</label>
+                        <input type="number" id="pages" name="pages">
+                        <label for="readStatus">Read Status:</label>
+                        <select name="readStatus" id="readStatus">
+                            <option value="read">Read</option>
+                            <option value="notRead" selected>Not yet</option>
+                        </select>
+                        <button type="submit" id="addButton">Add Book</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="./script.js"></script>
+</body>
+</html>
