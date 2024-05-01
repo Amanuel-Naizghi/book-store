@@ -31,7 +31,7 @@ body{
 .library-content>.shelf-container{
     display:grid;
     grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
-    grid-template-rows:200px;
+    grid-template-rows: 200px;
     gap:20px;
     background:#A79277;
     padding:0.9rem 0.7rem;
@@ -161,6 +161,10 @@ body{
     .addBook-container>.addBook>form>#addButton{
         padding:3px 7px;
         font-size:0.7rem;
+    }
+    .library-content>.shelf-container{
+        grid-template-rows:repeat(auto-fill,150px);
+        gap:7px;
     }
     .library-content>.shelf-container>div{
         height:100px;
