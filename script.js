@@ -106,7 +106,7 @@ addBookText.addEventListener("click",()=>{
     titleInput.setAttribute("required","required");
     authorInput.setAttribute("required","required");
 }); 
-//Removing or make the form hiden after the close button is clicked by the user
+//Removing or make the form hidden after the close button is clicked by the user
 closeButton.addEventListener("click",(e)=>{
     addBookForm.style.visibility="hidden";
     //For removing the required attributes from the input b/c its causing error if the form is closed with out filling it
